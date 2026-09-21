@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller 中间产物
+build/
+dist/
+*.spec
+*.toc
+
+# 自检/调试临时输出
+deskplate/_*.txt
+deskplate/_*.log
+deskplate/_*/
+deskplate/_*.png
+deskplate/_selftest*
+deskplate/_exe_*
+
+# 一次性网络诊断 / 修仓库脚本（只保留 gh_push.py、gh_release.py、gh_check.py）
+deskplate/gh_net*.py
+deskplate/gh_scope.py
+deskplate/gh_verify.py
+deskplate/gh_fix.py
+deskplate/gh_asset.py
+deskplate/gh_final.py
+deskplate/anonymize.py
+deskplate/gh_clean.py
+deskplate/gh_history.py
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# 智能体工作数据（含会话记忆，不入库）
+.workbuddy/
+
+# 可执行文件太大，放 GitHub Releases 下载，不进仓库
+*.exe
